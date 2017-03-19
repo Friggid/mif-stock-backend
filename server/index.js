@@ -1,7 +1,7 @@
 import express from 'express';
 import dbConfig from './config/db';
 import middlewareConfig from './config/middleware';
-import { StockRoutes } from './modules';
+import { StockRoutes, PortfolioRoutes } from './modules';
 
 const app = express();
 /*
@@ -13,7 +13,7 @@ dbConfig();
 */
 middlewareConfig(app);
 
-app.use('/api', [StockRoutes]);
+app.use('/api', [StockRoutes, PortfolioRoutes]);
 
 const PORT = process.env.PORT || 5000;
 

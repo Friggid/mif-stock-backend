@@ -17,6 +17,6 @@ const StockSchema = new Schema({
     type: String,
     required: false
   }
-});
+}, { timestamps: true });
 
 export default mongoose.model('Stock', StockSchema);
