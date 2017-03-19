@@ -1,0 +1,78 @@
+Skip to content
+This repository
+Search
+Pull requests
+Issues
+Gist
+ @Friggid
+ Sign out
+ Watch 2,904
+  Star 45,817
+  Fork 10,571 facebook/react-native
+ Code  Issues 1,071  Pull requests 193  Projects 0  Wiki  Pulse  Graphs
+Branch: master Find file Copy pathreact-native/.gitignore
+7d06c35  13 days ago
+@janicduplessis janicduplessis Run install third party script as part of the xcode build
+12 contributors @mkonicek @vjeux @janicduplessis @bestander @sahrens @lacker @ide @ianlevesque @enaqx @eddiemonge @spicyj @frantic
+RawBlameHistory     
+59 lines (51 sloc)  846 Bytes
+# Xcode
+!**/*.xcodeproj
+!**/*.pbxproj
+!**/*.xcworkspacedata
+!**/*.xcsettings
+!**/*.xcscheme
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+project.xcworkspace
+
+# Gradle
+/build/
+/Examples/**/android/app/build/
+/Examples/**/android/app/gradle/
+/Examples/**/android/app/gradlew
+/Examples/**/android/app/gradlew.bat
+/ReactAndroid/build/
+
+# Buck
+.buckd
+buck-out
+/ReactAndroid/src/main/jni/prebuilt/lib/armeabi-v7a/
+/ReactAndroid/src/main/jni/prebuilt/lib/x86/
+/ReactAndroid/src/main/gen
+
+# Android
+.idea
+.gradle
+local.properties
+*.iml
+/android/
+
+# Node
+node_modules
+*.log
+.nvm
+
+# OS X
+.DS_Store
+
+# Test generated files
+/ReactAndroid/src/androidTest/assets/AndroidTestBundle.js
+*.js.meta
+
+/third-party
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc. Terms Privacy Security Status Help

@@ -1,0 +1,22 @@
+{
+  "name": "mif-stock-backend",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "start": "SET NODE_ENV=development && nodemon index.js"
+  },
+  "repository": {},
+  "author": "Tautvydas Milciunas",
+  "license": "MIT",
+  "dependencies": {
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-register": "^6.24.0",
+    "express": "^4.15.2",
+    "mongoose": "^4.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.18.0",
+    "eslint-config-equimper": "^1.5.1"
+  }
+}
