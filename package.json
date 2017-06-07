@@ -13,6 +13,7 @@
   "author": "Tautvydas Milciunas",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.16.2",
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
     "jsonwebtoken": "^7.4.1",
