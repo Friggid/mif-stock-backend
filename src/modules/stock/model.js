@@ -3,20 +3,20 @@ import mongoose, { Schema } from 'mongoose';
 const StockSchema = new Schema({
   symbol: {
     type: String,
-    required: true
+    required: true,
   },
   lastPrice: {
     type: String,
-    required: true
+    required: true,
   },
   marketTime: {
     type: Date,
-    required: false
+    required: false,
   },
   percentChange: {
     type: String,
-    required: false
-  }
+    required: false,
+  },
 }, { timestamps: true });
 
 export default mongoose.model('Stock', StockSchema);
