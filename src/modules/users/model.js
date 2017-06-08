@@ -10,15 +10,18 @@ const UserSchema = new Schema(
     avatar: String,
     providerData: {
       uid: String,
-      providerData: String,
+      provider: String,
     },
   },
-  { timestamps: true }
+  { timestamps: true },
 );
 
 UserSchema.statics.findOrCreate = async function (args) {
   try {
-    const user = await this.findOne({ email: args.email, fullName: args.fullName });
+    const user = await this.findOne({
+      email: args.email,
+      fullName: args.fullName,
+    });
 
     if (!user) {
       return await this.create(args);
